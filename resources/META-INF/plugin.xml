@@ -1,0 +1,38 @@
+<idea-plugin>
+    <id>com.zhan.mvp.KtArmor-MVP</id>
+    <name>KtArmor-MVP</name>
+    <version>1.3</version>
+    <vendor url="https://github.com/hyzhan43" email="hyzhan43@163.com">HyZhan</vendor>
+
+    <description><![CDATA[
+    KtArmor Android MVP code template generation plugin facilitates rapid development and improves development efficiency. It needs to be used together with KtArmor.
+  ]]></description>
+
+    <change-notes><![CDATA[
+       新增创建文件可选项（Activity, Fragment, Contract, Presenter, Model, Layout）.
+  ]]></change-notes>
+
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+    <idea-version since-build="173.0"/>
+
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <!-- uncomment to enable plugin in all products
+    <depends>com.intellij.modules.lang</depends>
+    -->
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+        <applicationConfigurable instance="com.zhan.hy.config.MvpConfig"/>
+    </extensions>
+
+    <actions>
+        <!-- Add your actions here -->
+        <group id="MvpDialog" description="Auto make mvp code" text="Generate MVP Code">
+            <add-to-group anchor="first" group-id="NewGroup"/>
+            <action id="MvpDialog.ID" class="com.zhan.hy.MvpCreateAction" text="MVP Code"
+                    description="Auto make mvp code"/>
+        </group>
+    </actions>
+
+</idea-plugin>

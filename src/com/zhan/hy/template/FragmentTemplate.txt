@@ -1,0 +1,13 @@
+package $packageName
+
+import com.zhan.mvp.mvp.MvpFragment
+import $basePackageName.R
+
+$headerTemplate
+
+class $nameFragment : MvpFragment<$nameContract.Presenter>(), $nameContract.View {
+
+    override fun getLayoutId(): Int = R.layout.fragment_$lowerModule
+
+    override fun bindPresenter(): $nameContract.Presenter = $namePresenter(this)
+}

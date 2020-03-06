@@ -1,0 +1,14 @@
+package $packageName
+
+import com.zhan.mvp.mvp.BaseContract
+
+$headerTemplate
+
+interface $nameContract {
+
+    interface View : BaseContract.View{
+    }
+
+    interface Presenter : BaseContract.Presenter {
+    }
+}

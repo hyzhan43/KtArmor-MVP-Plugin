@@ -1,0 +1,9 @@
+package $packageName
+
+import com.zhan.mvp.mvp.BasePresenter
+
+$headerTemplate
+
+class $namePresenter(view: $nameContract.View) : BasePresenter<$nameContract.View>(view), $nameContract.Presenter {
+
+}

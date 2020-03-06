@@ -1,0 +1,13 @@
+package $packageName
+
+import com.zhan.mvp.mvp.MvpActivity
+import $basePackageName.R
+
+$headerTemplate
+
+class $nameActivity : MvpActivity<$nameContract.Presenter>(), $nameContract.View {
+
+    override fun getLayoutId(): Int = R.layout.activity_$lowerModule
+
+    override fun bindPresenter(): $nameContract.Presenter = $namePresenter(this)
+}

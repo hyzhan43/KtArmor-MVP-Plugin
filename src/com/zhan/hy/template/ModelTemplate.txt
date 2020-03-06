@@ -1,0 +1,9 @@
+package $packageName
+
+import com.zhan.mvp.mvp.BaseModel
+
+$headerTemplate
+
+object $nameModel: BaseModel(){
+
+}
